@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applications", "Applications\Applications.csproj", "{693DA6AC-6D4D-463C-A7DC-FB7A7B93684F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Browser", "Applications\Browser.csproj", "{693DA6AC-6D4D-463C-A7DC-FB7A7B93684F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tic-Tac-Toe", "Clock\Tic-Tac-Toe.csproj", "{687AD846-F1A1-4486-B353-61542C2EC040}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{693DA6AC-6D4D-463C-A7DC-FB7A7B93684F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{693DA6AC-6D4D-463C-A7DC-FB7A7B93684F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{693DA6AC-6D4D-463C-A7DC-FB7A7B93684F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687AD846-F1A1-4486-B353-61542C2EC040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687AD846-F1A1-4486-B353-61542C2EC040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687AD846-F1A1-4486-B353-61542C2EC040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687AD846-F1A1-4486-B353-61542C2EC040}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
