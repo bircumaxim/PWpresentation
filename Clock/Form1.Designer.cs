@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.A1 = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.C1 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
             this.C3 = new System.Windows.Forms.Button();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(337, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(336, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,8 +69,16 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -83,7 +91,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -95,6 +103,7 @@
             this.A1.Size = new System.Drawing.Size(100, 100);
             this.A1.TabIndex = 1;
             this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.button_Click);
             // 
             // A2
             // 
@@ -104,6 +113,7 @@
             this.A2.Size = new System.Drawing.Size(100, 100);
             this.A2.TabIndex = 2;
             this.A2.UseVisualStyleBackColor = true;
+            this.A2.Click += new System.EventHandler(this.button_Click);
             // 
             // A3
             // 
@@ -113,6 +123,7 @@
             this.A3.Size = new System.Drawing.Size(100, 100);
             this.A3.TabIndex = 3;
             this.A3.UseVisualStyleBackColor = true;
+            this.A3.Click += new System.EventHandler(this.button_Click);
             // 
             // B1
             // 
@@ -122,6 +133,7 @@
             this.B1.Size = new System.Drawing.Size(100, 100);
             this.B1.TabIndex = 4;
             this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.button_Click);
             // 
             // B2
             // 
@@ -131,6 +143,7 @@
             this.B2.Size = new System.Drawing.Size(100, 100);
             this.B2.TabIndex = 5;
             this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.button_Click);
             // 
             // B3
             // 
@@ -140,6 +153,7 @@
             this.B3.Size = new System.Drawing.Size(100, 100);
             this.B3.TabIndex = 6;
             this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.button_Click);
             // 
             // C1
             // 
@@ -149,6 +163,7 @@
             this.C1.Size = new System.Drawing.Size(100, 100);
             this.C1.TabIndex = 7;
             this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.button_Click);
             // 
             // C2
             // 
@@ -158,6 +173,7 @@
             this.C2.Size = new System.Drawing.Size(100, 100);
             this.C2.TabIndex = 8;
             this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.button_Click);
             // 
             // C3
             // 
@@ -167,19 +183,13 @@
             this.C3.Size = new System.Drawing.Size(100, 100);
             this.C3.TabIndex = 9;
             this.C3.UseVisualStyleBackColor = true;
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.C3.Click += new System.EventHandler(this.button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 355);
+            this.ClientSize = new System.Drawing.Size(336, 355);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.C1);
